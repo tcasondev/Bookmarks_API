@@ -1,9 +1,6 @@
-process.env.TZ = 'UTC'
-process.env.NODE_ENV = 'test'
+/* eslint-disable strict */
+const { expect } = require('chai');
+const supertest = require('supertest');
 
-require('dotenv').config()
-const { expect } = require('chai')
-const supertest = require('supertest')
-
-global.expect = expect
-global.supertest = supertest
+global.expect = expect;
+global.supertest = supertest;
